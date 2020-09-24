@@ -1,0 +1,27 @@
+{
+  "name": "aica-cookie-alert",
+  "version": "2.0.1",
+  "homepage": "https://github.com/DarkArt3k/aica-cookie-alert",
+  "authors": [
+    "Luca Forzutti <luca@ahd-creative.com>"
+  ],
+  "description": "Cookie Alert for EU Cookie's Law, i18n ready, fully customizable by Basilico Interactive",
+  "main": [
+    "js/aica.js",
+    "css/aica.css"
+  ],
+  "keywords": [
+    "eu",
+    "cookie",
+    "law"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.4"
+  }
+}

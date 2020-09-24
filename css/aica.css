@@ -1,0 +1,72 @@
+.aica {
+	font-size: 75%;
+	display: none;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 99999999;
+	box-shadow: 0 2px 20px rgba(0,0,0, 0.3);
+}
+.aica [data-role="link"],
+.aica [data-role="button"] {
+	cursor: pointer;
+}
+.aica [data-role="link"] {
+	text-decoration: none;
+}
+.aica [data-role="link"]:hover {
+	text-decoration: underline;
+}
+.aica [data-role="button"]{
+	background: transparent;
+	padding: 2px 8px;
+	border-radius: 4px;
+	margin: 0 5px;
+}
+.aica-content {
+	*zoom 1;
+	padding: 5px 20px;
+}
+.aica-content::before,
+.aica-content::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 640px),
+only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portait) {
+	.aica-content {
+		text-align: center;
+		padding: 10px;
+	}
+}
+.aica-stack .aica-content .aica-disclaimer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.aica-inline .aica-content .aica-disclaimer {
+	display: inline-block;
+}
+.aica-column .aica-content .aica-disclaimer {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+.aica-stack .aica-content .aica-actions {
+	text-align: center;
+}
+.aica-inline .aica-content .aica-actions {
+	display: inline-block;
+	padding-left: 15px;
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 640px) {
+	.aica-inline .aica-content .aica-actions {
+		padding-top: 10px;
+		padding-left: 0;
+	}
+}
+.aica-column .aica-content .aica-actions {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
